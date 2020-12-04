@@ -1,0 +1,191 @@
+
+//弹出框的公共样式
+.pop_container{
+    position: fixed; //需要设置一个top方向的值才会生效，展现出元素
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    box-sizing: border-box;
+   
+    .pop_inner{
+        .pop_title{
+            text-align: center;
+            color: white;
+            font-size: 0.2rem;
+            font-weight: bold;
+            letter-spacing: 0.04rem;
+            position: absolute;
+            top: -0.22rem;
+            width: 100%;
+        }
+        position: relative;
+        .pop_top{
+            width: 3.28rem;
+            height: 0.54rem;
+            background: url(../../assets/pop_top_bg.png);
+            background-size: 3.28rem 0.54rem;
+        }
+        .pop_mid{
+            margin-top: -0.01rem;
+            width: 3.28rem;
+            background: url(../../assets/pop_cir_bg.png) repeat-y;
+            background-size: 3.28rem;
+            .pop_content{
+                background: url(../../assets/b_pop_bg.png) repeat-y;
+                width: 3.28rem;
+                height: auto;
+                background-size: 3.28rem;
+                .pop_btn{
+                    display: block;
+                    width: 1.92rem;
+                    height: 0.45rem;
+                    background: url(../../assets/pop_btn_spr.png);
+                    background-size: 1.92rem ;
+                    margin: 0.25rem auto 0;
+                }
+                img{
+                    margin: 0 auto;
+                    width: 164px;
+                    height: 164px;
+                }
+            }
+           
+        }
+        .pop_bottom{
+            margin-top: -1px;
+            width: 3.28rem;
+            height: 0.56rem;
+            background: url(../../assets/pop_bot.png);
+            background-size: 3.28rem 0.56rem;
+        }
+        
+        .pop_close{
+            width: 0.38rem;
+            height: 0.38rem;
+            background: #000;
+            border: 0.02rem solid white;
+            border-radius: 50%;
+            font-size: 0.2rem;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            line-height: 0.32rem;
+            position: absolute;
+            top: 0.16rem;
+            right: -0.1rem;
+        }
+    }
+    
+}
+
+#popAttend{
+    .pop_login{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .pop_wx, .pop_qq{
+            position: relative;
+            width: 0.98rem;
+            height: 1.42rem;
+            background: url(../../assets/pop_login_sel_wx.jpg);
+            background-size: 0.98rem 1.42rem;
+            margin: 0 0.09rem;
+            &.selected::after{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: "";
+                display: block;
+                background: url(../../assets/pop_cover.png) no-repeat;
+                background-size: 0.98rem 1.42rem;
+            }
+        }
+        .pop_qq{            
+            background: url(../../assets/pop_login_sel_qq.jpg);
+            background-size: 0.98rem 1.42rem;
+        }
+    }
+}
+
+#popFAQ{
+    .FAQ_content{
+        font-size: 0.12rem;
+        font-weight: bold;
+        width: 2.76rem;
+        height: 3.2rem;
+        margin: 0 auto;
+        line-height: 0.18rem;
+        overflow: scroll;
+        .Q{
+            color: #896144;
+        }
+        .A{
+            color: #000000;
+        }
+        li{
+            margin-bottom: 0.1rem;
+            a{
+                color: #896144;
+            }
+        }
+    }
+}
+
+#popVideo{
+    .pop_mid{
+        width: 350px;
+        height: 270px;
+        position: relative;
+        margin: 0 auto;
+        background: #000;
+        border: 1px solid #7d623e;
+        display: flex;
+        align-items: center;
+        video{
+            width: 100%;
+            outline: none;
+            &.onpouse::after{
+                content: "";
+                display: none;
+                background: rgba(0, 0, 0, 0.35);
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                outline: none;
+                border: none;
+                border-radius: 50%;
+                left: 50%;
+                margin-left: -35px;
+                line-height: 70px;
+                text-align: center;
+                color: white;
+                font-size: 23px;
+                text-indent: 8px;
+            }
+        }    
+    }
+   
+    .pop_close{
+        top: -13px;
+    }
+    
+}
+
+#popDetail{
+    p{
+        font-size: 12px;
+        width: 260px;
+        margin: 0 auto;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,157 @@
+#gamePage{
+    overflow-y: scroll;
+    width: 100%;
+  
+    #gameCarousel{
+        .g_carousel-container{
+           
+            height: 3.955rem;
+    
+            margin-top: 0rem;
+            .g_carousel-list{
+                li{
+                    img{
+                        height: 3.955rem;
+                    }
+                }
+            }
+            .g_carousel-indicator{
+                position: relative;
+                top: -0.25rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 0.13rem;
+                li{
+                    width: 0.38rem;
+                    height: 0.04rem;
+                    margin: 0.04rem;
+                    background: #f7d82e;
+                    transform: rotate(0deg);
+                    &.selected{
+                        background: #fffcee;
+                    }
+                }
+            }
+        }
+    }
+    
+    p{
+        font-size: 12px;
+         color: #757e7f;
+         line-height: 12px; 
+         margin-top: 36px; 
+         text-align: center;
+         position: relative;
+        &::before{
+            content: "";
+            display: block;
+            background: url(../../assets/pop_tit_spr.png) no-repeat;
+            width: 24px;
+            height: 24px;
+            background-position: -190px -590px;
+            position: absolute;
+            transform: scale(0.5);
+            top: -10px;
+            left: -4px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            background: url(../../assets/pop_tit_spr.png) no-repeat;
+            width: 28px;
+            height: 24px;
+            background-position: -250px -590px;
+            position: absolute;
+            transform: scale(0.5);
+            top: -10px;
+            left: 352px;
+        }
+    }
+    .showDetail{
+        background: url(../../assets/pop_btn_spr.png) no-repeat;
+        background-position: 0px -750px;
+        width: 146px;
+        height: 48px;
+        transform: scale(0.5);
+        margin: 0 auto;
+    }
+   .footerContainer{
+       background: url(../../assets/page3_bottom.png) no-repeat;
+       background-size: 100% 200px;
+       background-position-y: 32px;
+        .pop_share{
+            width: 100%;
+            height: 128px;
+            position: relative;
+            margin-left: -34px;
+            top: -37px;
+            li{
+                margin: 0;
+                flex-basis: 72.5px 66px;
+                width: 145px;
+                height: 132px;
+                background: url(../../assets/btn-brand.png);
+                transform: scale(0.5);
+                position: absolute;
+                &:nth-child(1){
+                    left: 0px;
+                    top: 0px;
+                }
+                &:nth-child(2){
+                    background-position: 0 40%;
+                    left: 20%;
+                }
+                &:nth-child(3){
+                    background-position: 0 60%;
+                    left: 40%;
+                }
+                &:nth-child(4){
+                    background-position: 0 20%;
+                    left: 60%;
+                }
+                &:nth-child(5){
+                    background-position: 0 80%;
+                    left: 80%;
+                }
+                &:nth-child(6){
+                    background-position: 0 100%;
+                    left: 100%;
+                }
+            }
+        }
+        .game_footer{
+            width: 100%;
+            height: 106px;
+            
+            .corporation{
+                margin-top: -30px;
+                display: flex;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 52px;
+                    &:nth-child(1){
+                        width: 100%;
+                        height: 52px;
+                        background: url(../../assets/footer_logo.png) no-repeat;
+                        transform: scale(0.5);
+                    }
+                    &:nth-child(2){
+                        width: 274px;
+                        height: 42px;
+                        background: url(../../assets/footer_logo.png);
+                        transform: scale(0.5);
+                        background-position-y: 48px;
+                        position: relative;
+                        left: -50px;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+
+   }
+}

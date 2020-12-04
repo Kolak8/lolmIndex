@@ -1,0 +1,110 @@
+.menu_container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+.menu_container .menu_title {
+  background: #202629;
+  width: 100%;
+  height: 0.49rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.menu_container .menu_title::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.menu_container .menu_title .menu_logo {
+  float: left;
+  width: 0.8rem;
+  height: 0.24rem;
+  display: block;
+  margin: 0.09rem 0 0 0.14rem;
+}
+.menu_container .menu_title .menu_logo img {
+  width: 100%;
+  height: 100%;
+}
+.menu_container .menu_title .menu_attend {
+  float: right;
+  font-size: 0.12rem;
+  width: 0.7rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border: 0.03rem solid #ffe537;
+  text-align: center;
+  color: white;
+  margin: 0.08rem 0.32rem 0 0;
+}
+.menu_container .menu_title .menu_switch {
+  height: 0.01rem;
+  width: 0.22rem;
+  background: white;
+  float: right;
+  position: relative;
+  top: 0.25rem;
+  right: 0.1rem;
+  z-index: 400;
+}
+.menu_container .menu_title .menu_switch::after {
+  height: 0.01rem;
+  width: 0.22rem;
+  background: white;
+  content: "";
+  display: block;
+  position: relative;
+  top: -0.05rem;
+  transition: 0.3s;
+}
+.menu_container .menu_title .menu_switch::before {
+  height: 0.01rem;
+  width: 0.22rem;
+  background: white;
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.04rem;
+  transition: 0.3s;
+}
+.menu_container .menu_title .menu_switch.menu_switch--expand {
+  background: transparent;
+  transition: 0.4s;
+}
+.menu_container .menu_title .menu_switch.menu_switch--expand::before {
+  transform: rotate(-45deg);
+  top: 0rem;
+  background: red;
+  transition: 0.4s;
+}
+.menu_container .menu_title .menu_switch.menu_switch--expand::after {
+  transform: rotate(45deg);
+  top: -0.01rem;
+  background: red;
+  transition: 0.4s;
+}
+.menu_container .menu_nav {
+  font-size: 0.15rem;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background: #1e1e1e;
+  position: absolute;
+  right: 0;
+  top: calc(0.49rem - 100%);
+  text-align: center;
+  transition: 0.3s;
+  overflow: scroll;
+}
+.menu_container .menu_nav ul li {
+  border-top: 0.01rem solid #2c2c2c;
+  height: 0.68rem;
+  line-height: 0.68rem;
+}
+.menu_container .menu_nav.menu_nav--expand {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}

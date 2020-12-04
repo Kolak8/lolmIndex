@@ -1,0 +1,81 @@
+html,body{width: 100%; height: 100%; overflow: hidden;}
+body{font-size: 0.16rem;}
+a{text-decoration: none; color: white; font-size: 0.16rem;}
+.transition_none *{
+    -webkit-transition:none!important;
+    -moz-transition:none!important;
+    -ms-transition:none!important;
+    -o-transition:none!important;
+    transition:none!important;
+}
+.login{
+    position: relative;
+    line-height: 0.4rem;
+    font-size: 0.12rem;
+    color: white;
+    text-align: end;
+    z-index: 50;
+    span{
+        position: absolute;
+        top: 0.49rem;
+        right: 0rem;
+    }
+}   
+/* 轮播图通用样式 */
+.g_carousel-container{
+    width: 100%;
+    height: 2.15rem;
+    background: white;
+    position: relative;
+    margin-top: -0.09rem;
+    .g_carousel-list{
+        width: 300%;
+        height: 100%;
+        li{
+            float: left;
+            img{
+                width: 3.75rem;
+                height: 2.15rem;
+            }
+        }
+    }
+    .g_carousel-indicator{
+        position: relative;
+        top: -0.2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 0.13rem;
+        li{
+            width: 0.09rem;
+            height: 0.09rem;
+            margin: 0.04rem;
+            background: #67b1ff;
+            transform: rotate(45deg);
+            &.selected{
+                background: #202629;
+            }
+        }
+    }
+    .g_carousel-prev, .g_carousel-next{
+        background: url(../../assets/btn-lefRight.png);
+        width: 0.4rem;
+        height: 0.6rem;
+        position: absolute;
+        top: 50%;
+        background-size:auto 0.6rem;
+        margin-top: -0.3rem;
+        &.disabled{
+            opacity: 0.35;
+        }
+    }
+    .g_carousel-prev{
+        left: 0.1rem;
+    }
+    .g_carousel-next{
+        right: 0.1rem;
+        background-position: -3.11rem;
+    }
+}
