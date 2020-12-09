@@ -1,8 +1,8 @@
 .attend_container {
   background: url(../../assets/index_bg.jpg);
   width: 100%;
-  height: 700.02px;
-  background-size: 100% 695px;
+  height: 7.0002rem;
+  background-size: 100% 6.95rem;
 }
 .attend_container .slogan {
   width: 100%;
@@ -13,13 +13,13 @@
   top: 46%;
 }
 .attend_container .slogan .vid_ani {
-  width: 60px;
-  height: 60px;
+  width: 0.6rem;
+  height: 0.6rem;
   position: absolute;
   background: url(../../assets/vid_ani.png) no-repeat;
-  background-size: 60px 60px;
-  left: 75px;
-  top: 225px;
+  background-size: 0.6rem 0.6rem;
+  left: 0.75rem;
+  top: 2.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,18 +29,18 @@
 .attend_container .slogan .vid_ani::after {
   content: "";
   display: block;
-  width: 21px;
-  height: 30px;
+  width: 0.21rem;
+  height: 0.3rem;
   background: url(../../assets/vid_arr.png) no-repeat;
-  background-size: 21px 30px;
-  margin-left: 6px;
+  background-size: 0.21rem 0.3rem;
+  margin-left: 0.06rem;
 }
 .attend_container .slogan .book_btn {
   width: 100%;
   height: 50%;
   background: url(../../assets/book_btn.png) no-repeat;
   background-size: 84%;
-  margin: 257px 0 0 30px;
+  margin: 2.57rem 0 0 0.3rem;
 }
 
 @keyframes vidAni {
@@ -56,12 +56,12 @@
 }
 @keyframes vidDown {
   0% {
-    transform: translateY(-2px);
+    transform: translateY(-0.02rem);
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(0.03rem);
   }
   100% {
-    transform: translateY(-2px);
+    transform: translateY(-0.02rem);
   }
 }

@@ -7,12 +7,12 @@
   height: 100%;
   background: url(../../assets/news_bg.jpg) no-repeat;
   background-size: 100%;
-  background-position: 0px 199px;
+  background-position: 0rem 1.99rem;
 }
 #newsPage .news_content .news_nav {
-  height: 26px;
+  height: 0.26rem;
   background: #f7d82e;
-  font-size: 13px;
+  font-size: 0.13rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -20,11 +20,11 @@
 }
 #newsPage .news_content .news_nav a {
   color: #202629;
-  width: 65px;
-  height: 26px;
+  width: 0.65rem;
+  height: 0.26rem;
   text-align: center;
-  line-height: 26px;
-  margin: 0 4px;
+  line-height: 0.26rem;
+  margin: 0 0.04rem;
 }
 #newsPage .news_content .news_nav a.selected {
   background: url(../../assets/diamond-bg.png);
@@ -38,35 +38,35 @@
   position: relative;
 }
 #newsPage .news_content .news ul {
-  width: 340px;
+  width: 3.4rem;
   height: 100%;
 }
 #newsPage .news_content .news ul li {
-  height: 61px;
+  height: 0.61rem;
   width: 100%;
-  border-bottom: 1px #e5e3d6 solid;
+  border-bottom: 0.01rem #e5e3d6 solid;
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.12rem;
 }
 #newsPage .news_content .news ul li::after {
   position: absolute;
-  left: 11px;
+  left: 0.11rem;
   display: block;
   content: "";
-  width: 8px;
-  height: 40px;
+  width: 0.08rem;
+  height: 0.4rem;
   background: url(../../assets/decorate.png) no-repeat;
-  background-size: 8px 40px;
-  margin: 2px 0 0 18px;
+  background-size: 0.08rem 0.4rem;
+  margin: 0.02rem 0 0 0.18rem;
 }
 #newsPage .news_content .news ul li:last-child {
   border: none;
 }
 #newsPage .news_content .news ul li .title {
-  width: 306px;
-  margin-left: 26px;
+  width: 3.06rem;
+  margin-left: 0.26rem;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -80,23 +80,23 @@
   text-align: center;
   color: white;
   background: #202629;
-  width: 46px;
-  height: 17px;
-  line-height: 17px;
+  width: 0.46rem;
+  height: 0.17rem;
+  line-height: 0.17rem;
 }
 #newsPage .news_content .news ul li .title p span:nth-child(2) {
-  font-size: 10px;
+  font-size: 0.1rem;
   color: #9e9c8e;
   vertical-align: bottom;
 }
 #newsPage .news_content .news ul li .title a {
-  font-size: 13px;
-  margin-top: 10px;
-  line-height: 13px;
+  font-size: 0.13rem;
+  margin-top: 0.1rem;
+  line-height: 0.13rem;
   font-weight: bold;
   color: #000;
 }
 #newsPage .down {
   position: absolute;
-  margin-top: -30px;
+  margin-top: -0.3rem;
 }

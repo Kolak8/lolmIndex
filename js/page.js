@@ -1,5 +1,5 @@
 var showPage = (function(){
-    var PageIndex = 2;
+    var PageIndex = 0;
 var oPages = $$('.page');
 var oPages_container = $('.pages_container')
 var h = document.documentElement.clientHeight;

@@ -12,13 +12,13 @@
         overflow: hidden;
         .down{
             background: url(../../assets/down.png);
-            width: 26px;
-            height: 14px;
-            background-size: 26px 14px;
+            width: 0.26rem;
+            height: 0.14rem;
+            background-size: 0.26rem 0.14rem;
             position: absolute;
             left: 50%;
             top: 101%;
-            margin-left: -13px;
+            margin-left: -0.13rem;
             animation: vidDown 2s infinite;
         }
     }
