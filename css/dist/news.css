@@ -27,7 +27,7 @@
   margin: 0 0.04rem;
 }
 #newsPage .news_content .news_nav a.selected {
-  background: url(../../assets/diamond-bg.png);
+  background: url(../../assets/diamond-bg.png) no-repeat;
   color: white;
   background-size: 100%;
 }
