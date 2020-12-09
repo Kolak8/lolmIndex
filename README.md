@@ -1,4 +1,4 @@
-# lolmIndex ![https://feng-sen.github.io/lolmIndex/]预览
+# lolmIndex [https://feng-sen.github.io/lolmIndex/]预览
 lolmIndex coded by JavaScript
 ## 主要技术
   原生JS，HTML5,CSS3，SCSS编译；
