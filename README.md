@@ -26,7 +26,7 @@ lolmIndex coded by JavaScript
     }
    ```
  滑动状态
- ```
+ ```js
     //滑动中的页面状态
     function moving(dis){ //dis是当前的滑动距离
         for(var i = 0; i < oPages.length; i++){
@@ -50,7 +50,7 @@ lolmIndex coded by JavaScript
     }
  ```
  滑动完成
- ```
+ ```js
     //完成滑动之后的处理函数
     function finishMove(){
         if(nextIndex === null){
@@ -72,7 +72,7 @@ lolmIndex coded by JavaScript
     }
 ```
 滑动函数
-```
+```js
     //触摸滑动函数,目的是实现拖拽效果和获取滑动距离
     oPages_container.ontouchstart = function(e){ //e是触摸事件
         var y = e.touches[0].screenY; //获取当前触摸屏幕的位置
