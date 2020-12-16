@@ -14,8 +14,7 @@ function width(){
     
     //获取轮播图DOM节点
 function createCarousel(carousel_Id, carouselDatas){
-    var carousel_Index = 0;//初始化一个当前页面索引
-    
+    var carousel_Index = 0;//初始化一个当前页面索引    
     var oCarouselId = document.getElementById(carousel_Id);
     var oCarouselList = oCarouselId.querySelector('.g_carousel-list');
     var oCarouselIndicator = oCarouselId.querySelector('.g_carousel-indicator');
