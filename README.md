@@ -6,7 +6,7 @@ lolmIndex coded by JavaScript
 ---
   ### Page在移动端的上下滑动切换
   静止状态
-  ```
+  ```js
    //静止时各个页面的状态
     function setStatic(){
         nextIndex = null;
